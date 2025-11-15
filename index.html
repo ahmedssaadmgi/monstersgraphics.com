@@ -7,87 +7,9 @@
     <meta name="description" content="We design and ship production-grade software: Product, Cloud/DevOps, ML & Data, UX, and Team-as-a-Service for clients across the US, Europe, and global markets.">
     <link rel="canonical" href="https://monstersgraphics.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .animate-float {
-            animation: float 3s ease-in-out infinite;
-        }
-        
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .fade-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-        
-        .scroll-reveal {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.7s ease;
-        }
-        
-        .scroll-reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* SIEMENS TEAL COLOR PALETTE */
-        .gradient-text {
-            background: linear-gradient(135deg, #0f766e 0%, #0d9488 100%); /* teal-700 to teal-600 */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .bg-gradient-primary {
-            background-color: #0d9488; /* teal-600 */
-            background-image: none;
-        }
-        
-        .bg-gradient-primary:hover {
-            background-color: #0f766e; /* teal-700 */
-        }
-
-        .bg-gradient-hero {
-            background: linear-gradient(135deg, #f0fdfa 0%, #ffffff 50%); /* teal-50 to white */
-        }
-    </style>
+    
+    
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -99,6 +21,10 @@
       "contactPoint": [{ "@type": "ContactPoint", "contactType": "sales", "email": "hello@monstersgraphics.com" }]
     }
     </script>
+
+<link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.final.min.css">
 </head>
 <body class="bg-slate-50 text-slate-900">
     
@@ -139,7 +65,7 @@
 
             <div class="md:hidden flex items-center gap-2">
                 <button id="langToggleMobile" class="px-3 py-1.5 border-2 border-slate-300 rounded-full">ع</button>
-                <button id="mobileMenuBtn" class="p-2 rounded bg-slate-100 hover:bg-slate-200 transition-colors">☰</button>
+                <button id="mobileMenuBtn" aria-label="Toggle menu" class="p-2 rounded bg-slate-100 hover:bg-slate-200 transition-colors">☰</button>
             </div>
         </div>
 
@@ -186,7 +112,7 @@
 
                 <div class="relative group fade-in-up" style="animation-delay: 0.5s">
                     <div class="absolute -inset-4 bg-gradient-to-r from-teal-400 to-cyan-400 rounded-3xl opacity-20 group-hover:opacity-30 blur-2xl transition-opacity duration-500"></div>
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=80" alt="Engineering team" class="relative w-full rounded-2xl shadow-2xl object-cover h-96 transform group-hover:scale-105 transition-transform duration-500">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=80" alt="Engineering team" class="relative w-full rounded-2xl shadow-2xl object-cover h-96 transform group-hover:scale-105 transition-transform duration-500" loading="lazy">
                     <div class="absolute -bottom-6 left-6 bg-white rounded-xl p-4 shadow-xl border-2 border-teal-100 animate-float">
                         <div class="text-xs text-slate-500 font-medium">Outcome</div>
                         <div class="font-bold text-lg bg-gradient-primary bg-clip-text text-transparent">
@@ -200,7 +126,7 @@
         <section id="services" class="py-20 scroll-reveal">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="text-center max-w-3xl mx-auto mb-12">
-                    <h2 class="text-3xl lg:text-4xl font-bold gradient-text">Services</h2>
+                    <h2 class="text-3xl lg:text-4xl font-bold gradient-text"><span class="en">Services</span><span class="ar">خدماتنا</span></h2>
                     <p class="mt-4 text-lg text-slate-600">End-to-end engineering and operational excellence: product, cloud, ML, design and team solutions.</p>
                 </div>
 
@@ -303,65 +229,65 @@
         </section>
 
         <section id="work" class="py-20 scroll-reveal">
-            <div class="max-w-7xl mx-auto px-6">
-                <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-12 gap-4">
-                    <div>
-                        <h2 class="text-3xl lg:text-4xl font-bold gradient-text">Case studies</h2>
-                        <p class="mt-2 text-slate-600">Enterprise-scale problems. Measurable results.</p>
-                    </div>
-                    <a href="#work" class="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium group">
-                        View all <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
-                    </a>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <article class="group bg-white rounded-2xl overflow-hidden border-2 border-slate-100 hover:border-teal-300 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                        <div class="relative overflow-hidden h-48">
-                            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1000&q=80" alt="Fintech project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-bold text-lg group-hover:text-teal-600 transition-colors">Fintech: Architecting a Real-Time, PCI-Compliant Ledger</h3>
-                            <p class="mt-3 text-slate-600 text-sm">Partnered with a **US-based payments startup** to build their core real-time transaction ledger. Achieved **99.99% system uptime**.</p>
-                            <div class="mt-4 pt-4 border-t flex items-center justify-between">
-                                <div class="text-xs text-slate-500">Go, Kafka, K8s, TensorFlow</div>
-                                <span class="text-teal-600 group-hover:translate-x-1 transition-transform">→</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="group bg-white rounded-2xl overflow-hidden border-2 border-slate-100 hover:border-teal-300 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                        <div class="relative overflow-hidden h-48">
-                            <img src="https://images.unsplash.com/photo-1555066934-8d4f8f5f8f14?auto=format&fit=crop&w=1000&q=80" alt="E-commerce project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-bold text-lg group-hover:text-teal-600 transition-colors">E-Commerce: Headless PWA for a European Retailer</h3>
-                            <p class="mt-3 text-slate-600 text-sm">Led migration for a **European e-commerce brand** to a headless commerce PWA. Achieved a **2x conversion uplift**.</p>
-                            <div class="mt-4 pt-4 border-t flex items-center justify-between">
-                                <div class="text-xs text-slate-500">Next.js, Node, Redis, Stripe</div>
-                                <span class="text-teal-600 group-hover:translate-x-1 transition-transform">→</span>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="group bg-white rounded-2xl overflow-hidden border-2 border-slate-100 hover:border-teal-300 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-                        <div class="relative overflow-hidden h-48">
-                            <img src="https://images.unsplash.com/photo-1508385082359-f3d2a4f2b4a7?auto=format&fit=crop&w=1000&q=80" alt="Analytics project" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="font-bold text-lg group-hover:text-teal-600 transition-colors">SaaS Analytics: Scalable Multi-Tenant ETL & GDPR Compliance</h3>
-                            <p class="mt-3 text-slate-600 text-sm">Built a multi-tenant metrics platform for a **global B2B SaaS company**. Ensured **GDPR-compliance** and 80% faster query speeds.</p>
-                            <div class="mt-4 pt-4 border-t flex items-center justify-between">
-                                <div class="text-xs text-slate-500">Python, Airflow, Postgres</div>
-                                <span class="text-teal-600 group-hover:translate-x-1 transition-transform">→</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between mb-12 gap-4">
+            <div>
+                <h2 class="text-3xl lg:text-4xl font-bold gradient-text"><span class="en">Case studies</span><span class="ar">دراسات حالة</span></h2>
+                <p class="mt-2 text-slate-600">Enterprise-scale problems. Measurable results.</p>
             </div>
-        </section>
+            <a href="#work" class="inline-flex items-center text-teal-600 hover:text-teal-700 font-medium group">
+                View all <span class="ml-1 group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <article class="group bg-white rounded-2xl overflow-hidden border-2 border-slate-100 hover:border-teal-300 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div class="relative overflow-hidden h-48">
+                    <img src="assets/case1.jpg" alt="AI Project thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-lg group-hover:text-teal-600 transition-colors"><span class="en">AI Project: Automating Legal Compliance Review</span><span class="ar">مشروع الذكاء الاصطناعي: أتمتة مراجعة الامتثال القانوني</span></h3>
+                    <p class="mt-3 text-slate-600 text-sm">Developed a specialized solution for automating the compliance review of work files for law firms. Enhances efficiency and accuracy in compliance processes.</p>
+                    <div class="mt-4 pt-4 border-t flex items-center justify-between">
+                        <div class="text-xs text-slate-500">AI, Python, LegalTech</div>
+                        <span class="text-teal-600 group-hover:translate-x-1 transition-transform">→</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="group bg-white rounded-2xl overflow-hidden border-2 border-slate-100 hover:border-teal-300 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div class="relative overflow-hidden h-48">
+                    <img src="assets/case2.jpg" alt="AtarCloud project thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-lg group-hover:text-teal-600 transition-colors"><span class="en">AtarCloud: Leading 24/7 Property Management SaaS</span><span class="ar">AtarCloud: منصة إدارة ممتلكات على مدار الساعة</span></h3>
+                    <p class="mt-3 text-slate-600 text-sm">A leading property and community management SaaS solution in Saudi Arabia. Connects real estate owners, managers, and tenants through a single, secure platform.</p>
+                    <div class="mt-4 pt-4 border-t flex items-center justify-between">
+                        <div class="text-xs text-slate-500">React Native, Firebase, ReactJs</div>
+                        <span class="text-teal-600 group-hover:translate-x-1 transition-transform">→</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="group bg-white rounded-2xl overflow-hidden border-2 border-slate-100 hover:border-teal-300 shadow-sm hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div class="relative overflow-hidden h-48">
+                    <img src="assets/case3.jpg" alt="BookReadyPro project thumbnail" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-bold text-lg group-hover:text-teal-600 transition-colors"><span class="en">BookReadyPro: NLP-powered Tax Preparation Platform</span><span class="ar">BookReadyPro: منصة إعداد الضرائب المدعومة بمعالجة اللغة الطبيعية</span></h3>
+                    <p class="mt-3 text-slate-600 text-sm">A platform that assists accountants and bookkeepers with tax preparation using natural language processing (NLP) models. Utilizes a NodeJs server and Python microservice.</p>
+                    <div class="mt-4 pt-4 border-t flex items-center justify-between">
+                        <div class="text-xs text-slate-500">NodeJs, Python microservice, NLP</div>
+                        <span class="text-teal-600 group-hover:translate-x-1 transition-transform">→</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
 
         <section class="py-20 bg-gradient-primary text-white scroll-reveal">
             <div class="max-w-7xl mx-auto px-6">
@@ -503,7 +429,65 @@
             </div>
         </section>
     </main>
+ <section id="locations" class="py-20 bg-slate-50 scroll-reveal">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl lg:text-4xl font-bold gradient-text">Our Global Locations</h2>
+                    <p class="mt-4 text-lg text-slate-600">Serving clients worldwide from our offices in the US and Egypt</p>
+                </div>
 
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group p-8 bg-white rounded-2xl border-2 border-slate-100 hover:border-teal-300 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">📍</div>
+                        <h3 class="font-bold text-xl text-slate-900 group-hover:text-teal-600 transition-colors mb-4">Long Island City</h3>
+                        <div class="space-y-2 text-slate-600">
+                            <p class="text-sm">27-09 40th Ave Suite 201</p>
+                            <p class="text-sm">Long Island City, NY 11101</p>
+                            <p class="text-sm font-medium text-slate-700">United States</p>
+                        </div>
+                    </div>
+
+                    <div class="group p-8 bg-white rounded-2xl border-2 border-slate-100 hover:border-teal-300 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">📍</div>
+                        <h3 class="font-bold text-xl text-slate-900 group-hover:text-teal-600 transition-colors mb-4">Sunnyside</h3>
+                        <div class="space-y-2 text-slate-600">
+                            <p class="text-sm">41-10 39th Pl</p>
+                            <p class="text-sm">Sunnyside, NY 11104</p>
+                            <p class="text-sm font-medium text-slate-700">United States</p>
+                        </div>
+                    </div>
+
+                    <div class="group p-8 bg-white rounded-2xl border-2 border-slate-100 hover:border-teal-300 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                        <div class="text-4xl mb-4 group-hover:scale-110 transition-transform">📍</div>
+                        <h3 class="font-bold text-xl text-slate-900 group-hover:text-teal-600 transition-colors mb-4">Cairo</h3>
+                        <div class="space-y-2 text-slate-600">
+                            <p class="text-sm">Corp Building, Sefarat District</p>
+                            <p class="text-sm">Nasr City, Cairo</p>
+                            <p class="text-sm font-medium text-slate-700">Egypt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-white scroll-reveal">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl lg:text-4xl font-bold gradient-text">Partner with Our Global Engineering Team</h2>
+                    <p class="text-lg text-slate-600">
+                        Ready to launch your next **enterprise product**? Have a complex **digital transformation** challenge? Let's connect and discuss how we can deliver measurable impact.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <span class="p-3 bg-teal-100 rounded-full text-teal-600">✉️</span>
+                            <a href="mailto:hello@monstersgraphics.com" class="text-lg hover:text-teal-600">hello@monstersgraphics.com</a>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="p-3 bg-teal-100 rounded-full text-teal-600">🗓️</span>
+                            <a href="#" class="text-lg hover:text-teal-600">Schedule a **Global Discovery Session**</a>
+                        </div>
+                    </div>
+                </div>
     <footer class="bg-slate-900 text-slate-300">
         <div class="max-w-7xl mx-auto px-6 py-16">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -540,79 +524,8 @@
         </div>
     </footer>
 
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Set Footer Year
-        document.getElementById('footer-year').textContent = new Date().getFullYear();
-
-        // Mobile Menu Toggle
-        const menuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Smooth Scroll for Nav Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    // Close mobile menu on click
-                    if (!mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                    }
-                    // Scroll to element
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80, // Offset for fixed header
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // Scroll-Reveal Animations
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.scroll-reveal').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Animated Stats Counter
-        const counterObserver = new IntersectionObserver((entries, obs) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const el = entry.target;
-                    const target = +el.getAttribute('data-counter');
-                    let count = 0;
-                    const duration = 1500; // 1.5 seconds
-                    const stepTime = Math.abs(Math.floor(duration / target));
-
-                    const timer = setInterval(() => {
-                        count++;
-                        el.innerText = `${count}${el.innerText.replace(/[0-9]/g, '')}`;
-                        if (count === target) {
-                            clearInterval(timer);
-                        }
-                    }, stepTime);
-                    
-                    obs.unobserve(el); // Animate only once
-                }
-            });
-        }, { threshold: 0.5 });
-
-        document.querySelectorAll('[data-counter]').forEach(counter => {
-            counterObserver.observe(counter);
-        });
-    });
-    </script>
+    
+<script src="assets/script.js"></script>
+    <script src="assets/script.final.min.js"></script>
 </body>
 </html>
